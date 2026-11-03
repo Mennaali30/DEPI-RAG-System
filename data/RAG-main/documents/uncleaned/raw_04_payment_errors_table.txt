@@ -1,0 +1,21 @@
+PAYMENTS API — ERROR HANDLING
+
+HTTP STATUS | MEANING | CLIENT ACTION
+400 | request validation failure | FIX REQUEST
+401 | missing or invalid authentication | AUTHENTICATE
+403 | caller lacks required permission | CHECK SCOPE
+409 | current payment state conflict | DO NOT BLINDLY RETRY
+422 | business rule failed | FIX BUSINESS INPUT
+429 | rate limit exceeded | BACKOFF
+500 | unexpected server error | RETRY ONLY IF TRANSIENT
+
+Idempotency:
+POST /payments requires an Idempotency-Key header.
+Reusing the same key with an identical request returns the original result.
+
+Retry guidance:
+Clients may retry 429 and transient 5xx responses using exponential backoff.
+Clients must not blindly retry 409 or 422 responses.
+
+[exported spreadsheet text]
+[columns may not preserve visual layout]

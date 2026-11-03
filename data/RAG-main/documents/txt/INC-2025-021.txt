@@ -1,0 +1,4 @@
+INC-2025-021 — Orders Authentication Failures
+Root Cause: A client rollout sent refresh tokens directly to the Orders API.
+Resolution: The client was updated to obtain an access token from the Identity Service.
+Prevention: Orders documentation was updated to distinguish access and refresh tokens.

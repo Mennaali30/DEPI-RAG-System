@@ -1,0 +1,18 @@
+<html>
+<head><title>Search Platform Architecture</title></head>
+<body>
+<div class="nav">Home / Engineering / Architecture / Search</div>
+<h1>Search Platform Architecture</h1>
+<p>Last updated: 2025-08-14</p>
+<p>The search platform consists of an ingestion service, OpenSearch cluster,
+query API, and ranking service.</p>
+<h2>Retrieval</h2>
+<p>The first stage retrieves candidates using BM25. A second-stage
+learning-to-rank service may rerank the top 50 candidates.</p>
+<h2>Why Two Stages</h2>
+<p>Candidate retrieval must be inexpensive enough to operate at query volume.
+Reranking is more computationally expensive and is therefore applied to a
+smaller candidate set.</p>
+<p>Footer — Internal Engineering — Footer — Internal Engineering</p>
+</body>
+</html>

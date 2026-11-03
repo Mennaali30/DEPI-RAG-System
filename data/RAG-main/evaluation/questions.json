@@ -1,0 +1,250 @@
+[
+  {
+    "id": "Q01",
+    "question": "Why does the platform use Kafka for payment events instead of RabbitMQ?",
+    "expected_sources": [
+      "ADR-001"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q02",
+    "question": "What is the current authentication mechanism for the Orders API?",
+    "expected_sources": [
+      "API-ORDERS-001"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "Q03",
+    "question": "How do I roll back the Payment Service in production?",
+    "expected_sources": [
+      "RUNBOOK-PAY-001"
+    ],
+    "type": "procedure"
+  },
+  {
+    "id": "Q04",
+    "question": "What HTTP status means that the caller lacks permission on the Payments API?",
+    "expected_sources": [
+      "API-PAY-002"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "Q05",
+    "question": "Where should production secrets be stored?",
+    "expected_sources": [
+      "POL-SEC-001"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "Q06",
+    "question": "Why does the search platform use two retrieval stages?",
+    "expected_sources": [
+      "ARCH-SEARCH-001"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q07",
+    "question": "What caused the duplicate payment charge incident?",
+    "expected_sources": [
+      "INC-2025-014"
+    ],
+    "type": "incident"
+  },
+  {
+    "id": "Q08",
+    "question": "What is the safe migration strategy when old and new application versions coexist?",
+    "expected_sources": [
+      "ADR-005"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q09",
+    "question": "Does the Notification API response mean the message was delivered?",
+    "expected_sources": [
+      "API-NOTIF-001"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q10",
+    "question": "What should I check first when Kafka consumer lag increases?",
+    "expected_sources": [
+      "RUNBOOK-KAFKA-001"
+    ],
+    "type": "procedure"
+  },
+  {
+    "id": "Q11",
+    "question": "Which observability signals are required for production services?",
+    "expected_sources": [
+      "ARCH-OBS-001"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "Q12",
+    "question": "How does the API Gateway handle excessive request rates?",
+    "expected_sources": [
+      "ADR-007",
+      "TROUBLE-API-429"
+    ],
+    "type": "multi-source"
+  },
+  {
+    "id": "Q13",
+    "question": "What authentication scope is required to read the service catalog?",
+    "expected_sources": [
+      "API-CATALOG-001"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "Q14",
+    "question": "Why are engineering documents stored in object storage with metadata indexed separately?",
+    "expected_sources": [
+      "ADR-010"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q15",
+    "question": "What should I do before increasing a database connection pool?",
+    "expected_sources": [
+      "TROUBLE-DB-001"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q16",
+    "question": "What should a client do when it receives HTTP 429?",
+    "expected_sources": [
+      "TROUBLE-API-429",
+      "ADR-007"
+    ],
+    "type": "multi-source"
+  },
+  {
+    "id": "Q17",
+    "question": "How does blue-green deployment support rollback?",
+    "expected_sources": [
+      "GUIDE-DEPLOY-001"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q18",
+    "question": "Which fields are mandatory in Kafka events?",
+    "expected_sources": [
+      "GUIDE-KAFKA-001"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "Q19",
+    "question": "What customer information must not be logged?",
+    "expected_sources": [
+      "POL-DATA-001"
+    ],
+    "type": "policy"
+  },
+  {
+    "id": "Q20",
+    "question": "Why are notification deliveries asynchronous?",
+    "expected_sources": [
+      "ADR-012"
+    ],
+    "type": "semantic"
+  },
+  {
+    "id": "Q21",
+    "question": "Why couldn't adding more Kafka consumers fix the partition skew incident?",
+    "expected_sources": [
+      "INC-2026-003",
+      "RUNBOOK-KAFKA-001"
+    ],
+    "type": "multi-source"
+  },
+  {
+    "id": "Q22",
+    "question": "Which version of the event streaming architecture is current?",
+    "expected_sources": [
+      "ADR-001"
+    ],
+    "type": "version-aware"
+  },
+  {
+    "id": "Q23",
+    "question": "The old architecture says Kafka is the default for all asynchronous communication. Is that still true?",
+    "expected_sources": [
+      "ADR-001",
+      "ADR-001-V1"
+    ],
+    "type": "conflict"
+  },
+  {
+    "id": "Q24",
+    "question": "What should the system do if the knowledge base does not contain enough evidence?",
+    "expected_sources": [
+      "GUIDE-RAG-001"
+    ],
+    "type": "no-answer-policy"
+  },
+  {
+    "id": "Q25",
+    "question": "How should I deploy Orders safely and verify the deployment?",
+    "expected_sources": [
+      "RUNBOOK-ORD-002"
+    ],
+    "type": "procedure"
+  },
+  {
+    "id": "Q26",
+    "question": "What is the difference between an access token and a refresh token for Orders?",
+    "expected_sources": [
+      "API-ORDERS-001",
+      "INC-2025-021"
+    ],
+    "type": "multi-source"
+  },
+  {
+    "id": "Q27",
+    "question": "What happens when the search ranking service times out?",
+    "expected_sources": [
+      "ARCH-SEARCH-001"
+    ],
+    "type": "failure"
+  },
+  {
+    "id": "Q28",
+    "question": "How should a payment client retry transient failures?",
+    "expected_sources": [
+      "API-PAY-002",
+      "INC-2025-014"
+    ],
+    "type": "multi-source"
+  },
+  {
+    "id": "Q29",
+    "question": "How should conflicting documentation versions be handled?",
+    "expected_sources": [
+      "GUIDE-RAG-001",
+      "ADR-001",
+      "ADR-001-V1"
+    ],
+    "type": "version-aware"
+  },
+  {
+    "id": "Q30",
+    "question": "What fields help trace a request across services?",
+    "expected_sources": [
+      "ARCH-OBS-001"
+    ],
+    "type": "exact"
+  }
+]

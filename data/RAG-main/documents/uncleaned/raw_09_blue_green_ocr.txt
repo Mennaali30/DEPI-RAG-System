@@ -1,0 +1,20 @@
+BLUE-GREEN DEPLOYMENT GUIDE
+
+MODEL
+Two production environments exist: blue and green.
+One serves live traffic while the other receives the candidate release.
+
+PROCESS
+Deploy the candidate to the inactive environment,
+run health checks and smoke tests,
+then switch traffic.
+
+ROLLBACK
+Rollback is a traffic switch back to the previously active environment,
+provided database compatibility is maintained.
+
+LIMITATION
+Blue-green deployment does not remove the need for backward-compatible
+database changes.
+
+OCR WARNING: punctuation and line breaks may differ from source.

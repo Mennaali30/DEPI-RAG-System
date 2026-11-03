@@ -1,0 +1,218 @@
+[
+  {
+    "document_id": "ADR-001",
+    "title": "Event Streaming Architecture",
+    "type": "adr",
+    "version": "2.0",
+    "language": "en",
+    "section": "Architecture",
+    "source_format": "md"
+  },
+  {
+    "document_id": "ADR-001-V1",
+    "title": "Event Streaming Architecture \u2014 Archived",
+    "type": "adr",
+    "version": "1.0",
+    "language": "en",
+    "section": "Architecture",
+    "source_format": "md"
+  },
+  {
+    "document_id": "API-ORDERS-001",
+    "title": "Orders API Authentication Guide",
+    "type": "api_doc",
+    "version": "3.0",
+    "language": "en",
+    "section": "Orders API",
+    "source_format": "pdf"
+  },
+  {
+    "document_id": "RUNBOOK-PAY-001",
+    "title": "Payment Service Rollback Runbook",
+    "type": "runbook",
+    "version": "2.1",
+    "language": "en",
+    "section": "Payments",
+    "source_format": "pdf"
+  },
+  {
+    "document_id": "API-PAY-002",
+    "title": "Payments API Error Handling",
+    "type": "api_doc",
+    "version": "2.2",
+    "language": "en",
+    "section": "Payments API",
+    "source_format": "md"
+  },
+  {
+    "document_id": "POL-SEC-001",
+    "title": "Engineering Secrets Management Policy",
+    "type": "policy",
+    "version": "3.0",
+    "language": "en",
+    "section": "Security",
+    "source_format": "md"
+  },
+  {
+    "document_id": "ARCH-SEARCH-001",
+    "title": "Search Platform Architecture",
+    "type": "architecture",
+    "version": "1.2",
+    "language": "en",
+    "section": "Search",
+    "source_format": "pdf"
+  },
+  {
+    "document_id": "INC-2025-014",
+    "title": "Payment Incident \u2014 Duplicate Charge Spike",
+    "type": "incident",
+    "version": "1.0",
+    "language": "en",
+    "section": "Incidents",
+    "source_format": "md"
+  },
+  {
+    "document_id": "INC-2025-021",
+    "title": "Orders Incident \u2014 Authentication Failures",
+    "type": "incident",
+    "version": "1.0",
+    "language": "en",
+    "section": "Incidents",
+    "source_format": "txt"
+  },
+  {
+    "document_id": "ADR-005",
+    "title": "Database Migration Compatibility",
+    "type": "adr",
+    "version": "1.1",
+    "language": "en",
+    "section": "Database",
+    "source_format": "md"
+  },
+  {
+    "document_id": "API-NOTIF-001",
+    "title": "Notification API Delivery Semantics",
+    "type": "api_doc",
+    "version": "1.0",
+    "language": "en",
+    "section": "Notifications",
+    "source_format": "md"
+  },
+  {
+    "document_id": "RUNBOOK-KAFKA-001",
+    "title": "Kafka Consumer Lag Runbook",
+    "type": "runbook",
+    "version": "2.0",
+    "language": "en",
+    "section": "Kafka",
+    "source_format": "md"
+  },
+  {
+    "document_id": "ARCH-OBS-001",
+    "title": "Observability Standards",
+    "type": "policy",
+    "version": "2.0",
+    "language": "en",
+    "section": "Observability",
+    "source_format": "md"
+  },
+  {
+    "document_id": "ADR-007",
+    "title": "API Gateway Rate Limiting",
+    "type": "adr",
+    "version": "2.0",
+    "language": "en",
+    "section": "API Gateway",
+    "source_format": "md"
+  },
+  {
+    "document_id": "API-CATALOG-001",
+    "title": "Service Catalog API",
+    "type": "api_doc",
+    "version": "1.0",
+    "language": "en",
+    "section": "Service Catalog",
+    "source_format": "pdf"
+  },
+  {
+    "document_id": "ADR-010",
+    "title": "Object Storage for Documents",
+    "type": "adr",
+    "version": "1.0",
+    "language": "en",
+    "section": "Storage",
+    "source_format": "md"
+  },
+  {
+    "document_id": "TROUBLE-DB-001",
+    "title": "Database Connection Pool Exhaustion",
+    "type": "troubleshooting",
+    "version": "1.0",
+    "language": "en",
+    "section": "Database",
+    "source_format": "pdf"
+  },
+  {
+    "document_id": "TROUBLE-API-429",
+    "title": "Troubleshooting HTTP 429 Responses",
+    "type": "troubleshooting",
+    "version": "1.0",
+    "language": "en",
+    "section": "API Gateway",
+    "source_format": "md"
+  },
+  {
+    "document_id": "GUIDE-DEPLOY-001",
+    "title": "Blue-Green Deployment Guide",
+    "type": "guide",
+    "version": "1.0",
+    "language": "en",
+    "section": "Deployment",
+    "source_format": "md"
+  },
+  {
+    "document_id": "GUIDE-KAFKA-001",
+    "title": "Kafka Event Schema Guide",
+    "type": "guide",
+    "version": "1.3",
+    "language": "en",
+    "section": "Kafka",
+    "source_format": "md"
+  },
+  {
+    "document_id": "POL-DATA-001",
+    "title": "Customer Data Handling Policy",
+    "type": "policy",
+    "version": "2.0",
+    "language": "en",
+    "section": "Data Protection",
+    "source_format": "md"
+  },
+  {
+    "document_id": "ADR-012",
+    "title": "Asynchronous Notification Choice",
+    "type": "adr",
+    "version": "1.0",
+    "language": "en",
+    "section": "Notifications",
+    "source_format": "md"
+  },
+  {
+    "document_id": "INC-2026-003",
+    "title": "Kafka Partition Skew Incident",
+    "type": "incident",
+    "version": "1.0",
+    "language": "en",
+    "section": "Incidents",
+    "source_format": "md"
+  },
+  {
+    "document_id": "GUIDE-RAG-001",
+    "title": "Internal Documentation Search Guide",
+    "type": "guide",
+    "version": "1.0",
+    "language": "en",
+    "section": "Knowledge Search",
+    "source_format": "txt"
+  }
+]

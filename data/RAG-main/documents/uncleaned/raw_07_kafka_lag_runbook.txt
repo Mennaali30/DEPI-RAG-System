@@ -1,0 +1,29 @@
+### KAFKA CONSUMER LAG RUNBOOK ###
+EXPORT DATE: 2026/01/12
+OWNER: PLATFORM
+
+SYMPTOMS:
+Consumer lag increases when consumers process records slower than producers publish them.
+
+FIRST CHECKS:
+- check consumer group lag
+- check partition assignment
+- check consumer error logs
+- check downstream dependency latency
+
+COMMON CAUSES:
+1) Slow database operations
+2) Insufficient consumer instances
+3) Partition skew
+4) Downstream service throttling
+
+MITIGATION:
+If partitions are available, scale consumers within the partition limit.
+If the downstream dependency is the bottleneck, scaling consumers may make
+the problem worse.
+
+[NOTE FROM WIKI]
+DO NOT interpret a temporary lag drop as full recovery.
+Verify that lag decreases consistently.
+
+### END ###

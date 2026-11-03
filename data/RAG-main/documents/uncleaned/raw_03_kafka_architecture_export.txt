@@ -1,0 +1,31 @@
+Confluence Export
+Space: ENG
+Page: ADR-001
+Title: Event Streaming Architecture
+Status: Accepted
+Version: 2.0
+
+DECISION:
+The platform uses Apache Kafka as the primary event streaming backbone for
+high-volume asynchronous domain events.
+RabbitMQ remains approved for low-volume task queues where work acknowledgement
+and routing semantics are more important than replayable event history.
+
+CONTEXT CONTEXT CONTEXT
+The payment, order, and notification services produce events that may need to
+be consumed by multiple independent services.
+
+WHY KAFKA?
+Kafka provides durable partitions, consumer groups, replay from offsets,
+and scalable sequential processing.
+
+WHY NOT KAFKA EVERYWHERE?
+Kafka is not the default for short-lived command queues.
+For workloads requiring per-message acknowledgement, flexible routing,
+and relatively small volumes, RabbitMQ is simpler.
+
+Change History:
+v1.0 used Kafka for most asynchronous communication.
+v2.0 explicitly distinguishes durable domain events from task queues.
+
+----- end of export -----

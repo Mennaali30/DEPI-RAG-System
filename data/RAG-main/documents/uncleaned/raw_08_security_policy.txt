@@ -1,0 +1,18 @@
+ENGINEERING SECRETS MANAGEMENT POLICY
+Version: 3.0
+
+Approved Storage
+Secrets must be stored in the organization's secret manager.
+Environment variables may be used at runtime, but secrets must not be
+committed to source control.
+
+Logging:
+API keys, access tokens, passwords, private keys, and database credentials
+must NEVER appear in logs.
+
+Rotation:
+Production credentials must be rotated immediately after suspected exposure
+and according to the service-specific rotation schedule.
+
+----- CONFIDENTIAL -----
+This page was copied from the internal security wiki.

@@ -1,0 +1,29 @@
+*** INTERNAL WIKI EXPORT — DO NOT EDIT ***
+Page 1 of 3
+PAYMENT SERVICE ROLLBACK RUNBOOK
+PAYMENT SERVICE ROLLBACK RUNBOOK
+
+Last modified: 2025-11-03 | Owner: Platform Team | Category: RUNBOOK
+------------------------------------------------------------
+
+When to Roll Back:
+Rollback is appropriate when a production deployment causes elevated
+payment failures and the previous release is known to be healthy.
+
+PROCEDURE
+1. Confirm the incident commander has approved rollback.
+2. Check the current deployment version in the release dashboard.
+3. Select the previous production image from deployment history.
+4. Roll back the application deployment.
+5. Verify health checks.
+6. Run a synthetic payment authorization test.
+7. Confirm error rate returns to the normal operating range.
+8. Record the rollback in the incident timeline.
+
+DATABASE WARNING!!!
+Do NOT automatically roll back database migrations.
+If the release contains an irreversible migration, use the
+migration-specific recovery procedure.
+
+Footer: Internal Platform Wiki | Confidential | page 1
+Footer: Internal Platform Wiki | Confidential | page 2

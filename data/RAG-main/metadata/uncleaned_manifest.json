@@ -1,0 +1,16 @@
+{
+  "purpose": "Training data for ingestion, parsing, cleaning, chunking and retrieval failure analysis.",
+  "noise_types": [
+    "duplicate headers and footers",
+    "boilerplate navigation/export text",
+    "OCR-like character substitutions",
+    "broken line structure",
+    "HTML markup",
+    "table-like text",
+    "mixed stale/current content",
+    "inconsistent metadata",
+    "confidentiality/footer boilerplate",
+    "repeated generated text"
+  ],
+  "instruction": "Do not treat this manifest as part of the retrieval corpus; it is instructor metadata."
+}

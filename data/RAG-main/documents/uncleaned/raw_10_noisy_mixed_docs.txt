@@ -1,0 +1,24 @@
+DOCUMENT EXPORT — MULTIPLE SECTIONS
+
+[API CATALOG]
+GET /services lists registered services.
+GET /services/{name} returns ownership, repository, on-call team, and criticality.
+Authentication: OAuth 2.0 access tokens with catalog:read scope.
+
+==============================
+
+[OBSERVABILITY]
+Production services must expose metrics, structured logs, and distributed traces.
+Requests must propagate a correlation_id across service boundaries.
+At minimum record request count, error count, latency, dependency failures.
+
+==============================
+
+[OLD CONTENT — MAY BE STALE]
+Kafka was originally selected as the default mechanism for asynchronous
+communication between services.
+
+==============================
+EXPORT WARNING:
+This file combines sections from different wiki pages.
+Do not assume every statement has the same owner, version, or freshness.

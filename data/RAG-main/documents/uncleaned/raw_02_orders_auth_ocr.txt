@@ -1,0 +1,23 @@
+ORDERS API AUTHENTICATION GUIDE
+ORDERS API AUTHENTICATION GUIDE
+
+Authenticati0n Mechanism
+The Orders API uses OAuth 2.0 access t0kens issued by the Identity Service.
+Clients send the token using the HTTP Authorizati0n header with the Bearer scheme.
+
+Required Scopes:
+GET /orders -> orders:read
+POST /orders -> orders:write
+GET /orders/{id} -> orders:read
+
+Token Lifetime
+Access tokens are valid for 15 minutes.
+Refresh tokens are handled by the Identity Service and are NOT accepted by the
+Orders API.
+
+ERROR BEHAVIOR
+Missing token = HTTP 401
+Valid token without required scope = HTTP 403
+
+[OCR EXPORT]
+Some characters may be inaccurate: 0/O, 1/l/I.

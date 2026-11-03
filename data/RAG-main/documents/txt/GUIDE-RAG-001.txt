@@ -1,0 +1,6 @@
+INTERNAL DOCUMENTATION SEARCH GUIDE
+Search the engineering knowledge base for architecture, APIs, runbooks, incidents, and policies.
+Prefer current documents over archived versions.
+When evidence conflicts, identify the document version rather than silently choosing one.
+If the knowledge base lacks sufficient evidence, state that explicitly.
+For operational procedures, cite the relevant runbook and section.
